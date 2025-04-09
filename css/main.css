@@ -1,0 +1,340 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.vh-90{
+    height:90vh ;
+}
+.contenedor{
+    width: 100%;
+    padding: 100px 100px;
+}
+
+.Desplazador{
+    background-color: rgb(255, 146, 5);
+    border-radius: 13px;
+    display: inline-block;
+    padding: 15px;
+    cursor: pointer;
+    position:fixed;
+    bottom: 30px;
+    right: 30px;
+    transform: scale(0);
+    transition: 1s transform;
+}
+.Desplazador img{
+    width: 30px;
+}
+/* Efecto para desaparecer */
+.show{
+    transform: scale(1);
+}
+
+/* *logo */
+.logo{
+    border-radius: 50%;
+    border: solid 2px rgb(255, 255, 255);
+    width: 6.5rem;
+    height: 6.5rem;
+    background-color: rgb(116, 68, 6);
+    margin-left: 1.6rem;
+}
+.logo-titulo{
+    width: max-content;
+    background-color: rgb(134, 80, 8);
+    border-radius: 30px;
+    border: solid 2px rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 5px;
+}
+.logo-titulo > p{
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    margin: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* *hero */
+header {
+    background: linear-gradient(to top, hsla(0, 0%, 22%, 0.37), rgba(0, 0, 0, 0.507)), url(../assets/pexels-wendy-wei-1674064.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+nav{
+    text-align: right;
+    padding: 30px 50px;
+    width: 40%;
+}
+nav > a{
+    color:rgb(255, 255, 255);
+    font-weight: 500;
+    margin: 0px;
+    margin-right: 15px;
+    height: max-content;
+    text-decoration: none;
+}
+nav > a:hover{
+    text-decoration: underline;/*esto para dar un subrayado*/
+}
+nav > a:active{
+    color: rgb(180, 76, 6);
+}
+.container-titulo{
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container-titulo>h1{
+    font-size: 8rem;
+    font-family:Georgia;
+    font-weight: 800;
+}
+.container-titulo>h3{
+    font-size: 3rem;
+    font-family:cursive;
+}
+/* *Mision y Vision */
+.container-vision, .container-carrusel{
+    background-color: rgb(17, 17, 17);
+}
+.container-vision>img{
+    width: 40%;
+    height: 450px;
+    margin: 0 40px 0 0;
+}
+.container-vision>div{
+    width: 40%;
+}
+h3{
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
+.container-vision>div>p{
+    font-size: 1.2rem;
+    text-align: justify;
+}
+/* *Productos */
+.container-productos, .ubicacion{
+    background-color: rgb(211, 211, 211);
+}
+.imagen-port{
+    width: 300px;
+    height: 45vh;
+    margin: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.89);
+    cursor: pointer;
+    overflow: hidden;
+    position: relative; 
+}
+.img-products{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: rgba(97, 58, 6, 0.753);
+    transition: transform .4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hover-galeria p{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 900;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+.container-productos>p, .direccion{
+    font-size: 2rem;
+    font-family:cursive;
+    text-align: center;
+    color: black;
+}
+.direccion{
+    font-size: 1.5rem;
+    text-decoration: none;
+    width: 50%;
+}
+.direccion:hover{
+    text-decoration: underline;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+}
+/* *carrusel */
+.arrow{
+    width: 10%;
+    height: 40px;
+    cursor: pointer;
+}
+.testimony__course{
+    background-color: rgb(180, 76, 6);
+    display: inline-block;
+    padding: 5px;
+}
+.testimony__texts>p{
+    font-size: 1.1rem;
+    text-align: justify;
+}
+.testimony__img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 30%; 
+}
+.testimony__body{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    width: 90%;
+    height: 55vh;
+}
+.testimony__body--show{
+    pointer-events: unset;
+    display: flex;
+    transition: display 1s ease-in-out;
+}
+/* *Ubicacion */
+
+.hora{
+    color: black;
+    font-size: 3rem;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* *footer */
+
+.pie-pagina{
+    width: 100%;
+    background-color: rgb(59, 35, 14);
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:40px;
+    padding: 15px 0px;
+}
+.grupo-1 .logo{
+    width: 7.5rem;
+    height: 7.5rem;
+}
+.grupo-1 .logo-titulo > p{
+    font-size: 16px ;
+}
+.pie-pagina .grupo-1 .box h4{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+    text-align: center;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: rgb(92, 54, 1);
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    background-color: rgb(143, 85, 3);
+}
+.pie-pagina .grupo-2{
+    background-color: rgb(17, 17, 17);
+    padding: 10px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:992px){
+    .contenedor{
+        padding: 90px 30px;
+    }
+    .container-titulo>h1{
+        font-size: 6rem;
+    }
+    .container-vision>img{
+        width: 90%;
+        height: 380px;
+    }
+    nav{
+        width: 50%;
+    }
+    .container-vision>div{
+        width: 100%;
+        margin-top: 25px;
+    }
+    .imagen-port{
+        width: 280px;
+    }
+    .testimony__img{
+        width: 200px;
+        height: 200px;
+    }
+    .direccion{
+        margin: 20px 0;
+        width: 100%;
+    }
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
+@media screen and (max-width:500px){
+    .container-titulo>h1{
+        font-size: 4rem;
+    }
+    .container-titulo>h3{
+        font-size: 1.5rem;
+    }
+    nav{
+        width: 70%;
+    }
+    .testimony__img{
+        width: 180px;
+        height: 180px;
+    }
+    .testimony__body{
+        flex-direction: column-reverse;
+        min-height: 75vh;
+        margin: 10px 0;
+    }
+    .pie-pagina .grupo-1 .box p{
+        text-align: center;
+    }
+}
