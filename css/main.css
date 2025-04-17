@@ -58,7 +58,7 @@
 }
 /* *hero */
 header {
-    background: linear-gradient(to top, hsla(0, 0%, 22%, 0.37), rgba(0, 0, 0, 0.507)), url(../assets/pexels-wendy-wei-1674064.jpg);
+    background: linear-gradient(to top, hsla(0, 0%, 22%, 0.37), rgba(0, 0, 0, 0.507)), url(../assets/pexels-wendy-wei-1674064.webp);
     background-size: cover;
     background-attachment: fixed;
     position: relative;

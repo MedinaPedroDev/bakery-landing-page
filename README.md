@@ -11,10 +11,10 @@
 
 ### Preview
 
-<img style="width:90%; height:auto" alt="Night Coding" src="./img_1.PNG"/> 
+<img style="width:90%; height:auto" alt="Night Coding" src="./img_1.webp"/> 
 
-<img style="width:90%; height:auto" alt="Night Coding" src="./img_2.PNG"/> 
+<img style="width:90%; height:auto" alt="Night Coding" src="./img_2.webp"/> 
 
-<img style="width:90%; height:auto" alt="Night Coding" src="./img_3.PNG"/> 
+<img style="width:90%; height:auto" alt="Night Coding" src="./img_3.webp"/> 
 
-<img style="width:90%; height:auto" alt="Night Coding" src="./img_5.PNG"/> 
+<img style="width:90%; height:auto" alt="Night Coding" src="./img_5.webp"/> 
